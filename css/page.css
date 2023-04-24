@@ -1,0 +1,90 @@
+/*----------------------Blog Page-------------------------*/
+.blog-page {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+}
+
+.blog-container {
+    margin: 0 auto;
+    min-height: min-content;
+    background: rgba(218, 214, 214, 0.959);
+    border-radius: 30px;
+    width: 70vw;
+    margin-bottom: 80px;
+    padding: 10px;
+    box-shadow: 10px 10px 5px #2c2b2bc7;
+}
+
+.title-block {
+    margin-left: 10px;
+    min-width: 40vw;
+    padding-right: 10px;
+    width: 70vw;
+}
+
+.profile{
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.profile img {
+    max-width: 60px;
+    max-height: 60px;
+    border-radius: 50%;
+}
+
+.profile h2 {
+    display: block;
+    width: auto;
+}
+
+.info h5{
+    margin-left: 10px;
+    padding: 0;
+}
+
+.author {
+    padding: 0;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.author h5 {
+    padding: 0;
+    margin: 0;  
+    text-decoration: underline;
+}
+
+.author-bio {
+    font-size: .85rem;
+    font-style: italic;
+}
+
+.social {
+    display: flex;
+    padding: 0px 5px;
+}
+
+.fa-brands {
+    padding: 0px 5px;
+    color: var(--text-color);
+}
+
+.blog-container p {
+    text-indent: 2rem;
+}
+.blog-container blockquote {
+    text-indent: 4rem;
+}
+
+.blog-container p a {
+    color: rgb(216, 151, 66);
+}
+
+.bold-line {
+    font-weight: bold;
+}
+/*--------------X-------Blog Page--------X----------------*/

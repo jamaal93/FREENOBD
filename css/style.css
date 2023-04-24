@@ -1,0 +1,244 @@
+/*---------------------Global------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap');
+@import url('list.css');
+@import url('page.css');
+:root {
+    --text-color: #5d5f61;
+    --hover: rgba(218, 214, 214, 0.966);  
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url("assets/old\ school.jpg");
+    background-size: cover;
+    background-position: 25% 78%;
+    padding-top: 110px;
+    padding-bottom: 40px;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Saira Condensed' , sans-serif;
+    margin: 0;
+    padding: 0;
+    /*color: var(--text-color);*/
+} 
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+p, h2 {
+    text-shadow: -.85px 0 rgb(0, 0, 0), 0 .85px rgb(0, 0, 0), .85px 0 rgb(255, 255, 255), 0 -.85px rgb(255, 255, 255);
+    color: #ffffff;
+    border-radius: 1px;
+    padding-left: 10px;
+    letter-spacing: 2px;
+    background-color: rgba(97, 97, 97, 0.701);
+}
+
+.price {
+    display: inline-block;
+    font-size: 16px;
+    background: transparent;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#logo {
+    margin-left: 0px;
+    padding-left: 20px;
+    margin-right: 0;
+    letter-spacing: 5px;
+    font-size: 1.75rem;
+}
+
+section {
+    margin-top: 0px;
+    margin-bottom: 180px;
+    padding-top: 60px;
+    padding-bottom: 60px 0px;
+    overflow: auto;
+    margin: 30px 0px;
+    margin-right: 15px;
+}
+
+section:nth-of-type(even) .landing__container {
+    margin-right: 0;
+    margin-left: auto;
+    text-align: right; 
+}
+
+section:nth-of-type(even) .landing__container p {
+    padding-right: 15px;  
+}
+section:nth-of-type(even) .landing__container h2 {
+    padding-right: 15px;  
+}
+
+footer {
+    position: fixed;
+    font-size: 12px;
+    height: 3%; 
+    width: 100%;
+    margin-top: 100px;
+    bottom: 0;
+    background-color: #0B0C10;
+    text-align: center;
+    color: rgba(19, 159, 219, 0.863);
+    clear: both;
+}
+
+footer p {
+    text-shadow: none;
+}
+/*-----------X---------Global---------X--------------*/
+
+/*----------------------Nav-------------------------*/
+header , nav {
+    text-transform: uppercase;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    padding: 0px;
+    top: 0;
+    background-color: black;
+    display: inline-block;
+    justify-content: space-between;
+}
+
+nav {
+    margin: 8px 0px 0px 0px;
+    height: fit-content;
+    width: auto;
+    font-weight: bold;
+}
+
+#toggle {
+    display: none;
+}
+
+li {
+    display: inline;
+    margin: 0px 10px 0px 0px;
+}
+
+li a{
+    padding: 0px 25px;
+}
+li a:hover {
+    color: #0B0C10;
+    border-radius: 3px;
+    background-color: rgba(47, 206, 255, 0.596);
+}
+
+.navbar__menu .menu__link:hover {
+    background: rgba(47, 206, 255, 0.596);
+    color: #fff;
+    transition: ease 0.3s all;
+    border-radius: 3px;
+}
+
+.navbar__menu .active {
+    background: rgba(47, 206, 255, 0.596);
+    color: #fff;
+    border-radius: 3px;
+}
+
+#burger-menu {
+    display: none;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    margin: 4px auto;
+    cursor: pointer;
+    top: 0%;
+    right: 0%;
+    margin-right: 20px;
+    margin-top: 7px;
+}
+
+.burger-line {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 5px 0px;
+    border-radius: 40px;
+    background-color: var(--text-color);
+}
+/*------------X---------Nav---------X---------------*/
+
+/* Landing Container Styles */
+.landing__container {
+    margin-top: 15px;
+    padding-bottom: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 50px;
+    text-align: left;
+    min-height: 50%;
+    font-size: 1.3rem;
+    margin-bottom: 180px;
+    margin-left: 10px;
+    background-color: rgba(97, 97, 97, 0.447);
+    border-radius: 3px;
+    max-width: 46.5em;
+}
+.landing__container p {
+    padding-bottom: 20px;  
+}
+.landing__container h2 {
+    padding-top: 20px;  
+}
+
+/*----------------------Mobile-------------------------*/
+@media only screen and (max-width:680px) {
+    #burger-menu {
+        display: block; 
+    }
+
+    #logo {
+        white-space: nowrap;
+    }
+
+    #navbar__list {
+        display: none;
+        width: 100vw;     
+    }
+
+    .menu__links a {
+        display: block;
+        padding: 5px;
+        margin: 5px;
+        letter-spacing: 5px;
+        border-radius: 30px;
+    }
+
+    .section {
+        margin-right: 10px;
+        margin-top: 40px;
+        margin-bottom: 300px;
+        padding-top: 60px;
+        padding-bottom: 80px;
+        overflow: auto;
+        margin: 20px 0px;
+    }
+
+    #toggle:checked + #navbar__list {
+        display: inline-block;
+        text-align: right;
+        clear: both;
+
+    }
+}
